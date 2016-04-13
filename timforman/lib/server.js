@@ -2,7 +2,7 @@ const net = require('net');
 const fs = require('fs');
 const uuid = require('uuid');
 
-var port = 8080;
+var port = 3000;
 
 net.createServer((socket) => {
   console.log('TCP server connected on port ' + socket.remotePort);

@@ -23,10 +23,10 @@ gulp.task('lint:nontest', () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch('./test/*.js', ['lint:test', 'mochaTest']);
-  gulp.watch(files, ['lint:nontest', 'mochaTest']);
+  gulp.watch('./test/*.js', ['lint:test']);
+  gulp.watch(files, ['lint:nontest']);
 });
 
 gulp.task('lint', ['lint:test', 'lint:nontest']);
 gulp.task('mochaTest', ['mocha:test']);
-gulp.task('default', ['lint', 'mochaTest', 'watch']);
+gulp.task('default', ['lint', 'mochaTest']);

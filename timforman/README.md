@@ -19,4 +19,6 @@ Enter 'gulp' to execute default tests which include linting and mocha testing.
 
 Enter 'gulp lint' for linting only.
 
-Enter 'gulp mochaTest' for mocha test only.  
+Enter 'gulp mochaTest' for mocha test only.
+
+Enter 'gulp watch' to monitor file changes and run the linter when a file change is detected.  
